@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>六角西餐厅</title>
+    <style>
+        .header-carousel-item{
+            height:450px
+        }
+        /* 边线加粗 */
+        .form-control{
+          border-width: 3px;
+        }
+        .bg-cover{
+            background-size: cover;
+            background-position: center center;
+        }
+        .carousel-caption{
+            background-color: rgba(0, 0,0, .6);
+        }
+
+        /* 比较大的装置使用深色字小装置白色字 */
+        @media(min-width:768px){
+          .text-md-dark{
+            color:#333
+          }
+        }
+     </style>
+  </head>
+    
+
+
+
+<body>
+<!-- 灰色的底预计放入社群Icons -->
+<div class="bg-secondary py-2">
+    <!-- 限定范围container text-right移至最右 -->
+    <div class="container text-right">
+        <!-- 放入a连接打入a -->
+        <!-- 将icon改成白色 -->
+        <a href="#" class="text-white"><i class="fab fa-weibo"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-facebook-square"></i></a>
+    </div>
+</div>
+
+
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+          <img src="logo_w.svg" width="120" height="24" alt="">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- mr-auto将搜索栏推向最右 -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+          </li>
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              美味菜单
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">水果多多</a>
+              <a class="dropdown-item" href="#">肉多多</a>
+              <a class="dropdown-item" href="#">菜多多</a>
+            </div>
+          </li>
+        </ul>
+        <!-- 建立搜索栏from-inline -->
+        <form class="form-inline my-2 my-lg-0">
+            <!-- 使用按钮取代原本navbar -->
+
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+          <a href="" class="btn btn-primay"  data-toggle="modal" data-target="#loginModal">登入</a>
+          <a href="" class="btn btn-primay" data-toggle="modal" data-target="#registerModal">注册</a>
+        </form>
+      </div>
+    </div>
+    </nav>
+
+    <header>
+        <!-- 轮播 -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- 元件要做调整但不是要修改元件header carousel-item style内调整 -->
+              <div class="carousel-item header-carousel-item bg-cover active"
+              style="background-image: url(https://images.unsplash.com/photo-1492683513054-55277abccd99?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h3>一個人，田野間的輕鬆美味</h3>
+                    <p>城小中假上問，洲元化究變快歡專，臺正機上色從多空放我。來來中的來落行間我海府子成隨上事女，的石在朋經以定空他；級病期他，會性前集一於得當院應對分！意斯能己水成神錢。</p>
+                </div>
+              </div>
+              <div class="carousel-item header-carousel-item bg-cover"
+              style="background-image: url(https://images.unsplash.com/photo-1497668512640-fcbd959e5338?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h3>大口的放縱，毫無保留</h3>
+                    <p>組道心深的起一強理重麼變喜才她起寶事運果引物；生一越。為己的治應的了：有的兩懷華場前間不不存力：性張得燈表年健交公言要認才部黨岸家深此一和國專女特希這密年那報。</p>
+                </div>
+              </div>
+              <div class="carousel-item header-carousel-item bg-cover"
+              style="background-image: url(https://images.unsplash.com/photo-1453831362806-3d5577f014a4?dpr=2&auto=format&fit=crop&w=1500&h=1016&q=80&cs=tinysrgb&crop=);">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h3>愛戀的赤裸裸辣辣</h3>
+                    <p>件臺水則的看方府機英下英影加非！為走改幾少我住準愛地下。巴開上人在，但雜處權音生什有會能教！還話弟手大了。</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </header>
+    <section class="bg-info text-white">
+      <!-- 加上文字底色并填满空间 在backgroundcolor可以找到bg-info -->
+    
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                  <!-- md在大解析会跑4栏宽小解析会跑12栏 -->
+                    <div class="mb-2"><i class="fas fa-utensils fa-5x"></i></div>
+                    <h3>忘卻不了的莓果香</h3>
+                    <p>沒有遺憾的愛過、支持過他們，在商言商，他們總是假設：喔，但相信我。可是已經晚了……請你以後不要在我面前說英文了。</p>
+                </div>
+                <div class="col-4">
+                    <div class="mb-2"><i class="fas fa-utensils fa-5x"></i></div>
+                    <h3>積沈在心中的漣漪</h3>
+                    <p>但是當有機會時，但因為你是誠實且對此公平的，雪季可以延續4個月甚至5個月。摩挲著你的顏面，至少你不能完全抱怨荊棘，假如我在萬里外接到你的死耗，小馬，裝一個農夫，可以恣嘗鮮味。</p>
+                </div>
+                <div class="col-4">
+                    <div class="mb-2"><i class="fas fa-utensils fa-5x"></i></div>
+                    <h3>放不下的體脂肪</h3>
+                    <p>那就結婚吧我沒有妳會死，什麼都別說了，我什麼都不要，但我可以肯定地告訴你，前世的五百次回眸，沒有妳我的人生沒有意義。</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="container-fluid py-5 bg-light text-white" style="position:relative">
+      <div class="row">
+        <div class="col-md-5 bg-cover"
+        style="
+        position:absolute;top:0;bottom:0;
+        background-image:url(https://images.unsplash.com/photo-1481185103603-1dc844ef51db?dpr=2&auto=format&fit=crop&w=1080&h=718&q=80&cs=tinysrgb&crop=)">
+        </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-end text-md-dark">
+            <!-- 在flex justify content可将文字往右移动 -->
+            <div class="col-md-7">
+              <!-- md在大解析会跑4栏宽小解析会跑12栏 -->
+                <div class="mb-2"><i class="fas fa-utensils fa-5x"></i></div>
+                <h3>放不下的體脂肪</h3>
+                <p>那就結婚吧我沒有妳會死，什麼都別說了，我什麼都不要，但我可以肯定地告訴你，前世的五百次回眸，沒有妳我的人生沒有意義。</p>
+                <a href="#" class="btn btn-outline-info">查看更多</a>
+           
+            <div class="row mt-3">
+              <!-- 在mt-3调整栏位上空间 -->
+              <div class="col-md-6">
+                <div class="mb-2"><i class="fas fa-utensils fa-5x"></i></div>
+                <h3>積沈在心中的漣漪</h3>
+                <p>但是當有機會時，但因為你是誠實且對此公平的，雪季可以延續4個月甚至5個月。摩挲著你的顏面，至少你不能完全抱怨荊棘，假如我在萬里外接到你的死耗，小馬，裝一個農夫，可以恣嘗鮮味。</p>
+            </div>
+            <div class="col-md-6">
+              <h3>遇到這些灰色道德地帶時</h3>
+              <p>要到兩三年後才會比較有清楚的感受，而這正是為什麼西方公司會存活，作為一個年輕人，但是負責的人需要接受風險、喜歡冒險和願意負責。</h3>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center my-3">如何这么美味</h2>
+        <!-- 可将文字进行调整 -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="d-flex">
+              <!-- 透过layout下方media object使用mr-3调整 -->
+              <div class="mr-3"><i class="fas fa-stroopwafel fa-4x"></i></div>
+            <div>
+            <h3>美艷的食材</h3>
+            <p>工作，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，沒有錢，但又找不到出路．如果多吃魚可以補腦讓人變聰明的話，珍惜生活上帝還讓你活著，年老的時候，然後選中一張百元大鈔。</p>
+           </div>
+           </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <!-- 透过layout下方media object使用mr-3调整 -->
+              <div class="mr-3"><i class="fas fa-cheese fa-4x"></i></div>
+            <div>
+            <h3>里隧道貫</h3>
+            <p>呂明賜帶中華隊，Mark，禽流感驚爆，勸進不斷，新恐龍化石研究"雷克斯暴龍的叔公"。生，生，樹不要皮，年輕的時候，.人怕出名豬怕壯，睡你的老公，.人怕出名豬怕壯，可是已經晚了……請你以後不要在我面前說英文了。</p>
+           </div>
+           </div>
+           </div>
+           </div>
+           </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+          <html xmlns="http://www.w3.org/1999/xhtml">
+          <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+          <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+          <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+          <title>百度地图API自定义地图</title>
+          <!--引用百度地图API-->
+          <style type="text/css">
+              html,body{margin:0;padding:0;}
+              .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+              .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+          </style>
+          <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+          </head>
+          
+          <body>
+            <!--百度地图容器-->
+            <div style="width:100%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+          </body>
+          <script type="text/javascript">
+              //创建和初始化地图函数：
+              function initMap(){
+                  createMap();//创建地图
+                  setMapEvent();//设置地图事件
+                  addMapControl();//向地图添加控件
+              }
+              
+              //创建地图函数：
+              function createMap(){
+                  var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                  var point = new BMap.Point(113.777907,23.056318);//定义一个中心点坐标
+                  map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+                  window.map = map;//将map变量存储在全局
+              }
+              
+              //地图事件设置函数：
+              function setMapEvent(){
+                  map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                  map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                  map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                  map.enableKeyboard();//启用键盘上下左右键移动地图
+              }
+              
+              //地图控件添加函数：
+              function addMapControl(){
+                  //向地图中添加缩放控件
+          	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+          	map.addControl(ctrl_nav);
+                  //向地图中添加缩略图控件
+          	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+          	map.addControl(ctrl_ove);
+                  //向地图中添加比例尺控件
+          	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+          	map.addControl(ctrl_sca);
+              }
+              
+              
+              initMap();//创建和初始化地图
+          </script>
+          </html>
+          </div>
+      
+      
+          
+          <div class="col-md-6">
+            <!-- 进入bootstrap component底下的forms -->
+            <form action="">
+              <div class="form-group">
+                <label for="username">姓名</label>
+                <input type="text" class="form-control" id="username" placeholder="请输入姓名" required>
+                <!-- required检查网页表单送出，主流浏览器功能 -->
+              </div>
+              <div class="form-group">
+                <label for="tel">电话</label>
+                <input type="tel" class="form-control" id="tel" placeholder="请输入电话">
+              </div>
+              <div class="form-group">
+                <label for="email">email</label>
+                <input type="email" class="form-control" id="email" placeholder="请输入emial" required>
+              </div>
+              <div class="form-group">
+                <label for="number">输入人数*</label>
+                <input type="number" class="form-control" id="number" placeholder="请输入人数" >
+              </div>
+              <!-- 进入boost rap找到default（stacked） -->
+              <div class="form-check">
+                <!-- name=exampleradios同样的名称视为同一个群组 -->
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"check>
+                <label class="form-check-label" for="exampleRadios1">
+                  需要素食
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"check>
+                <label class="form-check-labe2" for="exampleRadios2">
+                  不需要素食
+                </label>
+              </div>
+     
+              <!-- 按钮位置移动到右边 -->
+              <div class="text-right">
+                <!-- 设置按钮与样式 -->
+                <button type="button" class="btn btn-secondary">取消</button>
+                <button type="summit" class="btn btn-primary">送出</button>
+              </div>
+            </form>
+          </div>
+       </div>
+     </div>
+         
+  </section>
+  <section class="container-fluid">
+    <!--建立两个md-6 -->
+    <div class="row">
+      <!-- p-4控制与边界的大小，可以试试p-5、p-3... -->
+      <!-- bg-cover来控制框内的图片-->
+      <!-- text-white改变框内的文字颜色-->
+      <div class="col-md-6 p-4 bg-cover text-white" style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+      <div class="row">
+        <!-- 文字太过长再次进行割分-->
+        <div class="col-md-9">
+          <!--加入更小的文字标题-->
+          <small>加入我们</small>
+          <h3>我跳出計程車跑向大直美麗華</h3>
+          <p>星巴克，他到了，而這正是為什麼西方公司會存活，而隨著你慢慢長大變老並開始面對這些困難的選擇時，根據你和這三個主要地區員工談話和面試的經驗。</p>
+          <!--加入按钮-->
+          <a href="#" class="btn btn-outline-warning">加入我们</a>
+        </div>
+      </div>
+    </div>
+
+    <!--参考上方修改-->
+    <div class="col-md-6 p-4 bg-cover text-white" style="background-image: url(https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+      <div class="row">
+        <!-- 文字太过长再次进行割分-->
+        <div class="col-md-9">
+          <!--加入更小的文字标题-->
+          <small>加入我们</small>
+          <h3>是貝德花芬是槐格納</h3>
+          <p>再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你的遺像，就是你媽，他年紀雖則小，最有資格指證或相詮釋。</p>
+          <!--加入按钮-->
+          <a href="#" class="btn btn-outline-warning">加入我们</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Modal有两个部分，一个是注册，一个是登入，所以贴入两次-->
+  <!--login in-->
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--变更Modal里面的颜色bg-primary 与文字颜色text-white https://getbootstrap.com/docs/4.0/utilities/colors/-->
+        <div class="modal-header" bg-primary text-white>
+          <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--登入内容-->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">信箱</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">密码</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">记住密码</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <!--新增a连接modal，class=“mr-auto”调整位置 https://getbootstrap.com/docs/4.0/layout/grid/#margin-utilities-->
+          <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">切换到注册</a>
+          <!-- 切换回注册连结就再把一开始的modal的注册语法在复制过来一次data-toggle=“modal” data-target="registerModal"-->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Modal-->
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog"     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--变更Modal里面的颜色bg-warning 与文字颜色text-white https://getbootstrap.com/docs/4.0/utilities/colors/-->
+        <div class="modal-header bg-warning text-white">
+          <h5 class="modal-title" id="exampleModalLabel">注册</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--注册内容-->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>注册六角西餐厅</h3>
+              <p>那就結婚吧我沒有妳會死，什麼都別說了，我什麼都不要，但我可以肯定地告訴你，前世的五百次回眸，沒有妳我的人生沒有意義。</p>
+              <p>那就結婚吧我沒有妳會死，什麼都別說了，我什麼都不要，但我可以肯定地告訴你，前世的五百次回眸，沒有妳我的人生沒有意義。</p>
+            </div>
+            <div class="col-md-6">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">信箱</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">密码</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">确认密码</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">记住密码</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      <div class="modal-footer">
+        <!--新增a连接modal，class=“mr-auto”调整位置 https://getbootstrap.com/docs/4.0/layout/grid/#margin-utilities -->
+        <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">切换到登入</a>
+        <!-- 切换回注册连结就再把一开始的modal的注册语法在复制过来一次data-toggle=“modal” data-target="loginModal"-->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
